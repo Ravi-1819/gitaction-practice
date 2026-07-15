@@ -10,6 +10,12 @@ jobs:
     steps:
       - name: Build using Docker
         run: echo "Building using Docker"
+
+ build:
+   runs-on: ubuntu-latest
+   steps:
+     - name: Build using Docker
+       run: echo "building using Docker"
         
   test:    
     runs-on: ubuntu-latest
