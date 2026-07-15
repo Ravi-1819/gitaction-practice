@@ -14,7 +14,7 @@ test:
   runs-on: ubuntu-latest
   steps:
     - name: Running test cases
-      run: echo "testing the app"concurrency: 
+      run: echo "testing the app" 
 
 depoly:
   runs-on: ubuntu-latest
