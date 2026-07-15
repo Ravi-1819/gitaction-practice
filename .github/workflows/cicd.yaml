@@ -2,6 +2,7 @@ name: CICD
 
 on:
   workflow_dispatch: 
+  
 
 jobs:
   code:
@@ -9,15 +10,16 @@ jobs:
     steps:
       - name: Build using Docker
         run: echo "Building using Docker"
+        
 
- test:
-  runs-on: ubuntu-latest
-  steps:
-    - name: Running test cases
-      run: echo "testing the app" 
-
- depoly:
-  runs-on: ubuntu-latest
-  steps:
-    - name: Deploying on the machine
-      run: echo "Deploying the code"
+  test:    
+    runs-on: ubuntu-latest
+    steps:
+     - name: Running test cases
+       run: echo "Tsting the app"
+       
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploying on the machine
+        run: echo "Deploying the code successfully!"
