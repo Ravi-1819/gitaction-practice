@@ -30,4 +30,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Deploying on the machine
-        run: echo "Deploying the my code successfully!"
+        run: echo "Deploying the code successfully!"
